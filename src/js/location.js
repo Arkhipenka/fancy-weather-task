@@ -1,5 +1,5 @@
 import map from './map'
-import getWeather from './weather'
+import getWeather from './test'
 import init from './init'
 import getGeoData from './getGeo';
 async function geoFindMe() {
@@ -23,12 +23,12 @@ async function geoFindMe() {
         mapLatitude.textContent = `Latitude: ${latitude} °`;
         mapLongitude.textContent = `Longitude: ${longitude} °`
 
-        //map.setCenter([longitude, latitude])
-        const weather = await getWeather(latitude, longitude, 'ru')
-        await init(weather, 'ru')
+        map.setCenter([longitude, latitude])
+        const weather = await getWeather(latitude, longitude, 'en');
+        await init(weather, 'en')
         console.log(weather)
 
-        await getGeoData(weather.city.name)
+        await getGeoData(weather.location.name)
 
     }
 
