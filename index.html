@@ -33,8 +33,8 @@
                 </svg></button>
             </li>
             <li class="nav-item mr-sm-2">
-              <button class="btn btn-outline-success " id="btn-en">EN</button>
-              <button class="btn btn-outline-success active" id="btn-ru">RU</button>
+              <button class="btn btn-outline-success active" id="btn-en">EN</button>
+              <button class="btn btn-outline-success " id="btn-ru">RU</button>
               <button class="btn btn-outline-success" id="btn-by">BY</button>
             </li>
             <li class="nav-item mr-sm-2">
@@ -59,23 +59,35 @@
 
         <div class="row featurette">
           <div class="col-md-7 order-md-1 info">
-            <div class="">
+            <div class="" style="background-color: rgba(0,0,0,0.6);">
               <h2 class="city text-warning" id="city"></h2>
               <p class="date" id="date"></p>
+              <p id="time"></p>
               <div class="now-weather row">
                 <p id="term" class="h1 col-md-5"></p>
-                <ul class="col-md-3">
-                  <li id="pic">
-
+                <ul class="col-md-5">
+                  <li >
+                    <img src="" alt="" id="pic">
                   </li>
                   <li id="weatherStatus"></li>
-                  <li id="t"></li>
+                  <li id="temp-2"></li>
                   <li id="wind"></li>
+                  <li id="humidity"></li>
 
                 </ul>
               </div>
+              <div class="row mt-5">
+                <div class="col-md-4">
+                  <h3 id="day-2"></h3>
+                </div>
+                <div class="col-md-4">
+                  <h3 id="day-3"></h3>
+                </div>
+                <div class="col-md-4">
+                  <h3 id="day-4"></h3>
+                </div>
+              </div>
             </div>
-
           </div>
           <div class="col-md-5 order-md-2 aside" height="100%">
             <p id="status"></p>
